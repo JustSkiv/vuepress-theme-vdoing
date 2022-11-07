@@ -17,8 +17,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   locales: {
     '/': {
-      lang: 'zh-CN',
-      title: "Evan's blog",
+      lang: 'ru-RU',
+      title: "Golang Study",
       description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
     }
   },
@@ -164,17 +164,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
 
-    // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
+    // The default author information of the article (this information can be configured separately in the md file)
+    // string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
-      link: 'https://github.com/xugaoyi', // 可选的
+      name: 'Nikolay Tuzov', // required
+      link: 'https://github.com/JustSjuv', // optional
     },
 
-    // 博主信息 (显示在首页侧边栏)
+    // Blogger information (displayed in the sidebar of the homepage)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      avatar: '/img/n_tuzov.png',
+      name: 'Николай Тузов',
+      slogan: 'Golang Developer',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -189,12 +190,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/JustSkiv',
         },
         {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          iconClass: 'icon-youtube',
+          title: 'GitHub',
+          link: 'https://www.youtube.com/c/НиколайТузов/',
         },
       ],
     },
@@ -293,10 +294,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
 
     [
-      'one-click-copy', // 代码块复制按钮
+      'one-click-copy', // Code block copy button
       {
         copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-        copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
+        copyMessage: 'Скопировано!', // default is 'Copy successfully and then paste it for use.'
         duration: 1000, // prompt message display time.
         showInMobile: false, // whether to display on the mobile side, default: false.
       },
